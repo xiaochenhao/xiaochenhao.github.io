@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+	<title>陈浩的个人主页</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	 <style>
+
+	/* 定义辅助CSS来美化简历头部 */
+	body{
+	  font-family: 'microsoft yahei',Arial,sans-serif;
+	}
+
+	.cvheader{
+	  border-bottom: 1px solid #DFDFDF;
+	  padding-top:30px;
+	  padding-bottom:20px;
+	}
+
+	.cvheader h1{
+	  margin:0;
+	}
+
+	.address{
+	  background: #efb73e;
+	  color: #fff;
+	  padding: 10px 0;
+	}
+
+	.abackground: {
+	  ;
+	  background: orange;
+	 ;
+	}
+
+	/* 定义辅助CSS来美化简历主体 */
+
+	.cvbody{
+	  padding-top: 50px; 
+	}
+
+	.cbox{
+	  margin-bottom: 10px;
+	  color: #FFF;
+	  padding: 70px;
+	}
+
+	/* 定义cbox颜色 */
+	.green{
+	  background: #2ecc71;
+	}
+
+	.orange{
+	  background: orange;
+	}
+
+	.red{
+	  background: #dd4814;
+	}
+    .blue{
+    	background: blue;
+    }
+	.bbox{
+	  border: 1px solid #DFDFDF;
+	  border-radius: 5px;
+	  margin-bottom:30px;
+	  padding: 50px;
+	}
+
+	.footer{
+	  margin: 30px 0 30px;
+	  padding: 50px;
+	  background: #CCC;
+	  color: #FFF;
+	}
+</style>
+</head>
+
+
+<body>
+<nav class=" navbar navbar-default navbar-fixed-top">
+	<div class="  container">
+		<div class="navbar-header">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
+             <!--  添加颜色//-->
+            <h3 class="text-primary">陈浩</h3>
+             <!--  添加图标 //-->
+            <p><span class="glyphicon glyphicon-paperclip"></span> Student@_@</p>
+            </div>
+		<button type="button" class="navbar-toggle navbar-fixed-top " data-toggle="collapse" data-target="#navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse" id="navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li ><a href="index.html"><span class="glyphicon glyphicon-home"></span> 博客首页</a></li>
+				<li><a href="resume.html"><span class="glyphicon glyphicon-list"></span> 个人简历</a></li>
+				<li><a href="album.html"><span class="glyphicon glyphicon-camera"></span> 相册</a></li>
+			</ul>	
+		</div>
+	</div>
+</nav>
+
+
+<div class="container">
+	<div class="cbox green">
+		<hgroup>
+			<h1><span class="glyphicon glyphicon-file"></span>个人博客</h1>
+			<h4>生活与学习中的点点滴滴</h4>
+		</hgroup>
+	</div>
+</div>
+
+<div id="blog">
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-md-9 col-lg-9 about">
+				<a name="1"></a>
+				<h3>网页编写-head部分</h3>
+				<p>使用了bootstrap的框架来编写，本次小学期制作的是静态网站同时参考了一些网上的模板。</p>
+				<p>首先是编写head部分定义个人网页名字。也可以定义一些自定义CCS样式方便接下来使用</p>
+				<a name="2"></a>
+				<h3>网页编写-body部分</h3>
+				<p>body部分为网页主体，在这里我们先编写以一个导航条，因为是响应式个人网站，在小屏幕时导航条不够美观使用按钮将导航条收起来。</p>
+				<p>第二部分为模块的标题，本次制作的个人网站分为个人博客，个人简历以及相册3部分，编写模块名称以便区分。</p>
+				<p>第三部分为网页内容的编写，个人博客和个人简历的编写分开说。
+			        个人博客部分：
+			            博客页面内容为简要显示所有博客，包括博客标题，图片以及内容简要。每个博客微一个部分，分开编写，同时第一页博客添加了视频演示，则视频演示模块和博客模块为两个部分，将页面分为两个部分来显示，视频模块靠右显示。当屏幕较小时视频模块在博客模块之后显示，不再分割页面。
+			            每一个博客简介中设置阅读全文模块链接到博客内容页面。
+			        个人简历：
+			             个人简历首先是个人照片。联系方式以及地址职业。响应式个人简历，这里定义图片为响应式，并且添加圆角效果，以便保证图片在不同设备上都可以完美显示 。之后是建立的主要内容部分，将页面分为两个部分，分块编写。编写过程中可以运用bootstrap组件，例如个人技能的显示。同时为了清楚的分割两个区域，这里我们添加了一个空白区域，或者也可以在CSS中定义Margin实现</p>
+			    <p>第四部分为页底的编写</p>
+			    <p>相册的编写
+			           简单地将页面分块显示图片。</p>       
+				<a name="3"></a>
+				<h3>视频演示</h3>
+		
+			    <p>视频地址为 http://v.youku.com/v_show/id_XMTYzNzc3NzA4NA==.html </p>
+						
+			</div>
+			
+		<div class="col-md-3 col-lg-3 hidden-sm hidden-xs">
+				<div class="list-group">
+					<a class="list-group-item" href="#1">1网页编写-head</a>
+					<a class="list-group-item" href="#2">2body部分</a>
+					<a class="list-group-item" href="#3">3视频演示</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+	<div class="container">
+		<div class="row"><div class="footer text-center">关注-微博@宇小嗣</div></div>
+	</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+</script>
+</body>
+</html>
