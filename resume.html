@@ -203,11 +203,15 @@
         </div>
         <div class="cbox orange">
           <h4>语言水平</h4>
-          <p>
-			<canvas id="en" width="150" height="150" class="pull-left"></canvas>
-			<canvas id="zh" width="150" height="150" class="pull-right"></canvas>
-			<p class="clearfix"></p>
-          </p>
+            英语
+            <div class="progress">
+              <div class="progress-bar progress-bar-info" style="width:70%"></div>
+            </div>
+            
+            中文
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" style="width:80%"></div>
+            </div>
         </div>
       </div>
     
@@ -256,59 +260,6 @@
 <script type="text/javascript"></script>
 
 <script>
-/*Javascript源代码*/
-
-$(function(){
-  $('#contact').popover({placement:'bottom', container: 'body', html:true, content:'<p>QQ: 809247918</p><p>微信：ch809247918</p>'});
-  $('#avatar').tooltip({'placement':'bottom'});
-  
-	$.getScript('http://www.chartjs.org/assets/Chart.js',function(){
-	  
-	  var zhdata = [{
-			label: '中文水平',
-			value: 90,
-			highlight: "#FFC870",
-			color: "#F7464A"
-		}, {
-			value: 10,
-			color: "#EEEEEE"
-		}
-		]
-
-		var zhoptions = {
-			animation: true,
-			segmentShowStroke : false
-		};
-
-		var c = $('#zh');
-		var ct = c.get(0).getContext('2d');
-		
-		var zhChart = new Chart(ct).Doughnut(zhdata, zhoptions);
-
-	
-	  var endata = [{
-			label: '英文水平',
-			value: 70,
-			highlight: "#5AD3D1",
-			color: "#4D5360"
-		}, {
-        value: 30,
-        color: "#EEEEEE"
-		}
-		]
-
-	  var enoptions = {
-			animation: true,
-			segmentShowStroke : false
-		};
-
-		var c = $('#en');
-		var ct = c.get(0).getContext('2d');
-		
-		var enchart = new Chart(ct).Doughnut(endata, enoptions);
-	});
-
-});
 
 </script>
 </body>
